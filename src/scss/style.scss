@@ -1,0 +1,29 @@
+
+
+.preloader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    text-align: center;
+    background-color: rgb(90,0,20);
+    .progress{
+        background-color: rgb(90,0,20);
+        .indeterminate{
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
+
+body::-webkit-scrollbar {
+	width: 10px;
+	background-color: #ddd;
+}
+body::-webkit-scrollbar-track {
+	background-color: #ddd;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: rgba(90, 0, 20, 1);
+}
