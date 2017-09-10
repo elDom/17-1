@@ -80,11 +80,20 @@ header{
             line-height: 2em;
         }
     }
+    @keyframes scrolling {
+        0%   { opacity: 1; }
+        50%  { opacity: 0.5;}
+        100% { opacity: 1; }
+    }
     .scroll-icon{
         position: absolute;
         width: 100%;
         bottom: 20px;
         left: 0px;
+        animation-name: scrolling;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        cursor: pointer;
         i{
             font-weight: 100;
             font-size: 2.5em;
