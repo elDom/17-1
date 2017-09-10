@@ -3,5 +3,11 @@ jQuery(window).on("load", function () {
 });
 
 jQuery(document).ready(function () {
-    jQuery('.carousel').carousel();
+    jQuery('.carousel').carousel({
+        indicators: true,
+        fullWidth: true,
+        duration: 200,
+        shift: 6,
+    });
+    //setInterval(function() {  $('.carousel').carousel('next'); }, 4000);
 });
