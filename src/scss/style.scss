@@ -70,6 +70,11 @@ header{
         }
         h4{
             letter-spacing: 0.2em;
+            @media screen and (max-width: 400px) {
+                & {
+                    letter-spacing: 0em;
+                }
+            }
         }
         h6{
             line-height: 2em;
@@ -325,5 +330,92 @@ main{
                 }
             }
         }
+    }
+    #ourclients{
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        background-image: url("../img/clients.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        color: #fff;
+        min-height: 400px;
+        .header{
+            &:after{
+                background: #fff;
+            }
+        }
+        .clients{
+            margin-top: 10vh;
+            margin-bottom: 25vh;
+        }
+        .fa{
+            font-size: 4em;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 40px;
+            &:hover{
+                color: $czerwony;
+            }
+        }
+    }
+    #getintouch{
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        .contact{
+            margin-top: 10vh;
+            h6{
+                font-weight: 400;
+                font-size: 1.2em;
+            }
+            /* form */
+            .input-field label {
+                color: $ciemnySzary;
+            }
+            .input-field input[type=text]:focus + label,
+            .input-field input[type=email]:focus + label,
+            .input-field textarea:focus + label {
+                color: $szary;
+            }
+            .input-field input[type=text]:focus,
+            .input-field input[type=email]:focus,
+            .input-field textarea:focus {
+                border-bottom: 1px solid #e9573f;
+                box-shadow: 0 1px 0 0 #e9573f;
+            }
+            .input-field input[type=text].valid,
+            .input-field input[type=email].valid,
+            .input-field textarea.valid {
+                border-bottom: 1px solid #aaa;
+                box-shadow: 0 0px 0 0 #aaa;
+            }
+            .input-field input[type=email].invalid {
+                border-bottom: 1px solid #e9573f;
+                box-shadow: 0 1px 0 0 #e9573f;
+            }
+            .btn{
+                background-color: $czerwony;
+                &:hover{
+                    background-color: $niebieski;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    color: $ciemnySzary;
+    background: $szary;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 0.9em;
+    border-top-color: rgba(0,0,0,0.1);
+    border-top-style: solid;
+    border-top-width: 1px; 
+    a{
+        color: $ciemnySzary;
+        cursor: pointer;
     }
 }
